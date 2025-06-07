@@ -30,8 +30,8 @@ const Footer = () => {
               <Link to="/" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Home
               </Link>
-              <Link to="/plots" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                Available Plots
+              <Link to="/services" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+                Services
               </Link>
               <Link to="/about" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
                 About Us
@@ -69,8 +69,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Our Services</h4>
             <ul className="space-y-2">
-              <li className="text-sm opacity-80">Land Plot Sales</li>
-              <li className="text-sm opacity-80">Architectural Design</li>
+              <li>
+                <Link to="/services/land-plot-sales" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+                  Land Plot Sales
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/architectural-design" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+                  Architectural Design
+                </Link>
+              </li>
               <li className="text-sm opacity-80">Real Estate Consultation</li>
               <li className="text-sm opacity-80">Legal Documentation</li>
               <li className="text-sm opacity-80">Flexible Payment Plans</li>

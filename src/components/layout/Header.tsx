@@ -10,7 +10,7 @@ const Header = () => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'Plots', href: '/plots' },
+    { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -50,7 +50,7 @@ const Header = () => {
           {/* Contact Buttons */}
           <div className="hidden md:flex items-center space-x-2">
             <Button size="sm" variant="outline" asChild>
-              <a href="tel:+265997141858" className="flex items-center space-x-1">
+              <a href="tel:+265997141858" className="flex items-center space-x-1 text-foreground">
                 <Phone className="w-4 h-4" />
                 <span>Call</span>
               </a>
@@ -60,7 +60,7 @@ const Header = () => {
                 href="https://wa.me/265997141858" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center space-x-1"
+                className="flex items-center space-x-1 text-primary-foreground"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp</span>
@@ -95,7 +95,7 @@ const Header = () => {
               ))}
               <div className="flex flex-col space-y-2 pt-4">
                 <Button size="sm" variant="outline" asChild>
-                  <a href="tel:+265997141858" className="flex items-center justify-center space-x-1">
+                  <a href="tel:+265997141858" className="flex items-center justify-center space-x-1 text-foreground">
                     <Phone className="w-4 h-4" />
                     <span>Call Now</span>
                   </a>
@@ -105,7 +105,7 @@ const Header = () => {
                     href="https://wa.me/265997141858" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-1"
+                    className="flex items-center justify-center space-x-1 text-primary-foreground"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>WhatsApp</span>
