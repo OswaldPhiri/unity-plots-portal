@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone, MessageCircle } from 'lucide-react';
@@ -28,33 +27,45 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" asChild className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-3">
+              <Button 
+                size="lg" 
+                asChild 
+                className="bg-white text-primary hover:bg-white/90 hover:scale-105 transition-all duration-300 text-lg px-8 py-3 shadow-lg hover:shadow-xl"
+              >
                 <Link to="/services" className="flex items-center space-x-2">
                   <span>Explore Our Services</span>
-                  <ArrowRight className="w-5 h-5" />
+                  <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </Button>
               
-              <div className="flex gap-3">
-                <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-primary">
-                  <a href="tel:+265997141858" className="flex items-center space-x-2 text-white hover:text-primary">
-                    <Phone className="w-5 h-5" />
-                    <span className="text-white hover:text-primary">Call Now</span>
-                  </a>
-                </Button>
-                
-                <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-primary">
-                  <a 
-                    href="https://wa.me/265997141858" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-white hover:text-primary"
-                  >
-                    <MessageCircle className="w-5 h-5" />
-                    <span className="text-white hover:text-primary">WhatsApp</span>
-                  </a>
-                </Button>
-              </div>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                asChild 
+                className="border-2 border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <a href="tel:+265997141858" className="flex items-center space-x-2">
+                  <Phone className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+                  <span>Call Now</span>
+                </a>
+              </Button>
+              
+              <Button 
+                size="lg" 
+                variant="outline" 
+                asChild 
+                className="border-2 border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <a 
+                  href="https://wa.me/265997141858" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-2"
+                >
+                  <MessageCircle className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+                  <span>WhatsApp</span>
+                </a>
+              </Button>
             </div>
 
             {/* Trust Indicators */}

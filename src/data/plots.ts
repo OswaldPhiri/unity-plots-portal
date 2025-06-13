@@ -98,7 +98,7 @@ export const plots: Plot[] = [
     ],
     description: 'Large mixed-use plot perfect for residential and commercial development. Located in a growing area with high potential.',
     status: 'Available',
-    imageUrl: '/plots/airwing-estate-2.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
       lat: -13.9900,
       lng: 33.7690
@@ -120,7 +120,7 @@ export const plots: Plot[] = [
     ],
     description: 'Spacious plot in Chitedze area, perfect for agricultural use or residential development. Features fertile soil and water access.',
     status: 'Available',
-    imageUrl: '/plots/chitedze-1.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
       lat: -13.9901,
       lng: 33.7691
@@ -142,7 +142,7 @@ export const plots: Plot[] = [
     ],
     description: 'Beautiful residential plot with ample garden space. Located in a peaceful area of Chitedze with good access to amenities.',
     status: 'Available',
-    imageUrl: '/plots/chitedze-2.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
       lat: -13.9902,
       lng: 33.7692
