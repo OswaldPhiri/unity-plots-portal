@@ -58,7 +58,7 @@ const Header = () => {
                 href="https://wa.me/265997141858" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center space-x-1"
+                className="flex items-center space-x-1 text-primary-foreground"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp</span>
@@ -103,7 +103,7 @@ const Header = () => {
                     href="https://wa.me/265997141858" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center space-x-1"
+                    className="flex items-center justify-center space-x-1 text-primary-foreground"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>WhatsApp</span>

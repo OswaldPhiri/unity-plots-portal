@@ -29,17 +29,17 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button size="lg" asChild className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-3">
-                <Link to="/plots" className="flex items-center space-x-2">
-                  <span>Browse Available Plots</span>
+                <Link to="/services" className="flex items-center space-x-2">
+                  <span>Explore Our Services</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
               
               <div className="flex gap-3">
                 <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white hover:text-primary">
-                  <a href="tel:+265997141858" className="flex items-center space-x-2">
+                  <a href="tel:+265997141858" className="flex items-center space-x-2 text-white hover:text-primary">
                     <Phone className="w-5 h-5" />
-                    <span>Call Now</span>
+                    <span className="text-white hover:text-primary">Call Now</span>
                   </a>
                 </Button>
                 
@@ -48,10 +48,10 @@ const HeroSection = () => {
                     href="https://wa.me/265997141858" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2"
+                    className="flex items-center space-x-2 text-white hover:text-primary"
                   >
                     <MessageCircle className="w-5 h-5" />
-                    <span>WhatsApp</span>
+                    <span className="text-white hover:text-primary">WhatsApp</span>
                   </a>
                 </Button>
               </div>
