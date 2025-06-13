@@ -19,16 +19,15 @@ const Header = () => {
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">U</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">Unity Investments</h1>
-              <p className="text-xs text-muted-foreground">Many hands make light work</p>
-            </div>
+          <Link to="/" className="flex flex-col items-center py-2">
+            <img 
+              src="/logo.png" 
+              alt="Unity Investments Logo" 
+              className="h-20 w-auto object-contain"
+            />
+            <p className="text-sm text-foreground italic mt-2">Many hands make light work</p>
           </Link>
 
           {/* Desktop Navigation */}
@@ -37,8 +36,8 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
+                className={`text-sm font-medium transition-colors hover:text-accent ${
+                  isActive(item.href) ? 'text-accent' : 'text-muted-foreground'
                 }`}
               >
                 {item.name}
@@ -48,13 +47,13 @@ const Header = () => {
 
           {/* Contact Buttons */}
           <div className="hidden md:flex items-center space-x-2">
-            <Button size="sm" variant="outline" asChild>
+            <Button size="sm" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
               <a href="tel:+265997141858" className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
                 <span>Call</span>
               </a>
             </Button>
-            <Button size="sm" asChild>
+            <Button size="sm" className="bg-primary hover:bg-primary/90" asChild>
               <a 
                 href="https://wa.me/265997141858" 
                 target="_blank" 
@@ -84,8 +83,8 @@ const Header = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
+                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                    isActive(item.href) ? 'text-accent' : 'text-muted-foreground'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -93,13 +92,13 @@ const Header = () => {
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button size="sm" variant="outline" asChild>
+                <Button size="sm" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
                   <a href="tel:+265997141858" className="flex items-center justify-center space-x-1">
                     <Phone className="w-4 h-4" />
                     <span>Call Now</span>
                   </a>
                 </Button>
-                <Button size="sm" asChild>
+                <Button size="sm" className="bg-primary hover:bg-primary/90" asChild>
                   <a 
                     href="https://wa.me/265997141858" 
                     target="_blank" 

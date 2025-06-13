@@ -1,4 +1,3 @@
-
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,16 +8,17 @@ import { X } from 'lucide-react';
 interface PlotFiltersProps {
   filters: {
     status: string;
-    district: string;
+    location: string;
+    type: string;
     priceRange: string;
-    installmentAvailable: string;
   };
   onFilterChange: (key: string, value: string) => void;
   onClearFilters: () => void;
-  districts: string[];
+  locations: string[];
+  types: string[];
 }
 
-const PlotFilters = ({ filters, onFilterChange, onClearFilters, districts }: PlotFiltersProps) => {
+const PlotFilters = ({ filters, onFilterChange, onClearFilters, locations, types }: PlotFiltersProps) => {
   const hasActiveFilters = Object.values(filters).some(value => value !== 'all');
 
   return (
@@ -42,24 +42,24 @@ const PlotFilters = ({ filters, onFilterChange, onClearFilters, districts }: Plo
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Statuses</SelectItem>
-              <SelectItem value="available">Available</SelectItem>
-              <SelectItem value="reserved">Reserved</SelectItem>
-              <SelectItem value="sold">Sold</SelectItem>
+              <SelectItem value="Available">Available</SelectItem>
+              <SelectItem value="Reserved">Reserved</SelectItem>
+              <SelectItem value="Sold">Sold</SelectItem>
             </SelectContent>
           </Select>
         </div>
 
         <div>
-          <Label htmlFor="district">District</Label>
-          <Select value={filters.district} onValueChange={(value) => onFilterChange('district', value)}>
+          <Label htmlFor="location">Location</Label>
+          <Select value={filters.location} onValueChange={(value) => onFilterChange('location', value)}>
             <SelectTrigger>
-              <SelectValue placeholder="All districts" />
+              <SelectValue placeholder="All locations" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All Districts</SelectItem>
-              {districts.map((district) => (
-                <SelectItem key={district} value={district}>
-                  {district}
+              <SelectItem value="all">All Locations</SelectItem>
+              {locations.map((location) => (
+                <SelectItem key={location} value={location}>
+                  {location}
                 </SelectItem>
               ))}
             </SelectContent>
@@ -67,15 +67,18 @@ const PlotFilters = ({ filters, onFilterChange, onClearFilters, districts }: Plo
         </div>
 
         <div>
-          <Label htmlFor="installments">Payment Options</Label>
-          <Select value={filters.installmentAvailable} onValueChange={(value) => onFilterChange('installmentAvailable', value)}>
+          <Label htmlFor="type">Property Type</Label>
+          <Select value={filters.type} onValueChange={(value) => onFilterChange('type', value)}>
             <SelectTrigger>
-              <SelectValue placeholder="All options" />
+              <SelectValue placeholder="All types" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All Options</SelectItem>
-              <SelectItem value="true">Installments Available</SelectItem>
-              <SelectItem value="false">Full Payment Only</SelectItem>
+              <SelectItem value="all">All Types</SelectItem>
+              {types.map((type) => (
+                <SelectItem key={type} value={type}>
+                  {type}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
         </div>
@@ -108,21 +111,21 @@ const PlotFilters = ({ filters, onFilterChange, onClearFilters, districts }: Plo
               />
             </Badge>
           )}
-          {filters.district !== 'all' && (
+          {filters.location !== 'all' && (
             <Badge variant="secondary" className="flex items-center gap-1">
-              District: {filters.district}
+              Location: {filters.location}
               <X 
                 className="w-3 h-3 cursor-pointer" 
-                onClick={() => onFilterChange('district', 'all')}
+                onClick={() => onFilterChange('location', 'all')}
               />
             </Badge>
           )}
-          {filters.installmentAvailable !== 'all' && (
+          {filters.type !== 'all' && (
             <Badge variant="secondary" className="flex items-center gap-1">
-              {filters.installmentAvailable === 'true' ? 'Installments Available' : 'Full Payment Only'}
+              Type: {filters.type}
               <X 
                 className="w-3 h-3 cursor-pointer" 
-                onClick={() => onFilterChange('installmentAvailable', 'all')}
+                onClick={() => onFilterChange('type', 'all')}
               />
             </Badge>
           )}

@@ -1,31 +1,27 @@
-
 import { useState, useMemo } from 'react';
 import Layout from '@/components/layout/Layout';
 import PlotCard from '@/components/plots/PlotCard';
 import PlotFilters from '@/components/plots/PlotFilters';
-import { mockPlots } from '@/data/plots';
+import { plots } from '@/data/plots';
 
 const Plots = () => {
   const [filters, setFilters] = useState({
     status: 'all',
-    district: 'all',
-    priceRange: 'all',
-    installmentAvailable: 'all'
+    location: 'all',
+    type: 'all',
+    priceRange: 'all'
   });
 
-  const districts = [...new Set(mockPlots.map(plot => plot.district))];
+  const locations = [...new Set(plots.map(plot => plot.location))];
+  const types = [...new Set(plots.map(plot => plot.type))];
 
   const filteredPlots = useMemo(() => {
-    return mockPlots.filter(plot => {
+    return plots.filter(plot => {
       if (filters.status !== 'all' && plot.status !== filters.status) return false;
-      if (filters.district !== 'all' && plot.district !== filters.district) return false;
-      if (filters.installmentAvailable !== 'all') {
-        const hasInstallments = plot.installmentAvailable;
-        if (filters.installmentAvailable === 'true' && !hasInstallments) return false;
-        if (filters.installmentAvailable === 'false' && hasInstallments) return false;
-      }
+      if (filters.location !== 'all' && plot.location !== filters.location) return false;
+      if (filters.type !== 'all' && plot.type !== filters.type) return false;
       
-      // Price range filter (simplified - in real app you'd parse the actual price)
+      // Price range filter
       if (filters.priceRange !== 'all') {
         const priceText = plot.price.toLowerCase();
         switch (filters.priceRange) {
@@ -55,9 +51,9 @@ const Plots = () => {
   const handleClearFilters = () => {
     setFilters({
       status: 'all',
-      district: 'all',
-      priceRange: 'all',
-      installmentAvailable: 'all'
+      location: 'all',
+      type: 'all',
+      priceRange: 'all'
     });
   };
 
@@ -78,12 +74,13 @@ const Plots = () => {
             filters={filters}
             onFilterChange={handleFilterChange}
             onClearFilters={handleClearFilters}
-            districts={districts}
+            locations={locations}
+            types={types}
           />
 
           <div className="flex justify-between items-center">
             <p className="text-muted-foreground">
-              Showing {filteredPlots.length} of {mockPlots.length} properties
+              Showing {filteredPlots.length} of {plots.length} properties
             </p>
           </div>
 

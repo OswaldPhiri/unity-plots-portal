@@ -1,13 +1,12 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Ruler, FileText, ArrowRight } from 'lucide-react';
-import { mockPlots } from '@/data/plots';
+import { getFeaturedPlots } from '@/data/plots';
 
 const FeaturedPlots = () => {
-  const featuredPlots = mockPlots.filter(plot => plot.status === 'available').slice(0, 3);
+  const featuredPlots = getFeaturedPlots();
 
   return (
     <section className="py-16">
@@ -27,22 +26,15 @@ const FeaturedPlots = () => {
               <CardHeader className="p-0">
                 <div className="relative h-48 overflow-hidden">
                   <img 
-                    src={plot.images[0]} 
+                    src={plot.imageUrl} 
                     alt={plot.title}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4">
                     <Badge variant="secondary" className="bg-primary text-primary-foreground">
-                      {plot.status === 'available' ? 'Available' : 'Reserved'}
+                      {plot.status}
                     </Badge>
                   </div>
-                  {plot.installmentAvailable && (
-                    <div className="absolute top-4 right-4">
-                      <Badge variant="outline" className="bg-white/90">
-                        Installments
-                      </Badge>
-                    </div>
-                  )}
                 </div>
               </CardHeader>
               
@@ -62,7 +54,7 @@ const FeaturedPlots = () => {
                   </div>
                   <div className="flex items-center text-muted-foreground">
                     <FileText className="w-4 h-4 mr-2 text-primary" />
-                    <span className="text-sm">{plot.documentationType}</span>
+                    <span className="text-sm">{plot.type}</span>
                   </div>
                 </div>
 

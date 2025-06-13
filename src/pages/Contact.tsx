@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -91,11 +90,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">Phone Numbers</h3>
                     <p className="text-muted-foreground">
                       <a href="tel:+265997141858" className="hover:text-primary transition-colors">
-                        0997 141 858
-                      </a>
-                      <br />
-                      <a href="tel:+265887141858" className="hover:text-primary transition-colors">
-                        0887 141 858
+                        +265 99 714 1858
                       </a>
                     </p>
                   </div>
@@ -106,13 +101,19 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email Address</h3>
+                    <h3 className="font-semibold text-foreground mb-1">Email Addresses</h3>
                     <p className="text-muted-foreground">
                       <a 
                         href="mailto:unityinvestment0@gmail.com" 
-                        className="hover:text-primary transition-colors"
+                        className="hover:text-primary transition-colors block mb-2"
                       >
                         unityinvestment0@gmail.com
+                      </a>
+                      <a 
+                        href="mailto:kambatuwaedward@gmail.com" 
+                        className="hover:text-primary transition-colors block"
+                      >
+                        kambatuwaedward@gmail.com
                       </a>
                     </p>
                   </div>
@@ -125,8 +126,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Working Hours</h3>
                     <p className="text-muted-foreground">
-                      Monday – Saturday<br />
-                      8:00 AM – 5:00 PM
+                      Monday – Friday<br />
+                      07:30 AM – 04:00 PM
                     </p>
                   </div>
                 </div>
@@ -141,7 +142,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" asChild className="flex-1">
                   <a 
-                    href="https://wa.me/265997141858?text=Hello, I'm interested in your land plots and would like more information." 
+                    href="https://wa.me/265997141858?text=Hello, I'm interested in Unity Investment's services and would like more information." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2"

@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
@@ -14,11 +13,12 @@ import {
   Calendar,
   CheckCircle
 } from 'lucide-react';
-import { mockPlots } from '@/data/plots';
+import { plots } from '@/data/plots';
+import { Plot } from '@/data/plots';
 
 const PlotDetail = () => {
   const { id } = useParams<{ id: string }>();
-  const plot = mockPlots.find(p => p.id === id);
+  const plot = plots.find(p => p.id === id);
 
   if (!plot) {
     return (
@@ -35,8 +35,8 @@ const PlotDetail = () => {
     );
   }
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
+  const getStatusColor = (status: Plot['status']) => {
+    switch (status.toLowerCase()) {
       case 'available':
         return 'bg-green-100 text-green-800 border-green-200';
       case 'reserved':
@@ -65,30 +65,16 @@ const PlotDetail = () => {
           <div className="space-y-4">
             <div className="relative h-96 overflow-hidden rounded-lg">
               <img 
-                src={plot.images[0]} 
+                src={plot.imageUrl} 
                 alt={plot.title}
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-4 left-4">
                 <Badge className={getStatusColor(plot.status)}>
-                  {plot.status.charAt(0).toUpperCase() + plot.status.slice(1)}
+                  {plot.status}
                 </Badge>
               </div>
             </div>
-            
-            {plot.images.length > 1 && (
-              <div className="grid grid-cols-3 gap-2">
-                {plot.images.slice(1).map((image, index) => (
-                  <div key={index} className="h-24 overflow-hidden rounded">
-                    <img 
-                      src={image} 
-                      alt={`${plot.title} ${index + 2}`}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
 
           {/* Plot Details */}
@@ -106,8 +92,8 @@ const PlotDetail = () => {
                 <div className="flex items-center text-muted-foreground">
                   <MapPin className="w-5 h-5 mr-3 text-primary" />
                   <div>
-                    <div className="font-medium text-foreground">{plot.location}</div>
-                    <div className="text-sm">{plot.district}</div>
+                    <div className="font-medium text-foreground">Location</div>
+                    <div className="text-sm">{plot.location}</div>
                   </div>
                 </div>
                 
@@ -122,40 +108,18 @@ const PlotDetail = () => {
                 <div className="flex items-center text-muted-foreground">
                   <FileText className="w-5 h-5 mr-3 text-primary" />
                   <div>
-                    <div className="font-medium text-foreground">Documentation</div>
-                    <div className="text-sm">{plot.documentationType}</div>
-                  </div>
-                </div>
-                
-                <div className="flex items-center text-muted-foreground">
-                  <Calendar className="w-5 h-5 mr-3 text-primary" />
-                  <div>
-                    <div className="font-medium text-foreground">Payment</div>
-                    <div className="text-sm">
-                      {plot.installmentAvailable ? 'Installments Available' : 'Full Payment'}
-                    </div>
+                    <div className="font-medium text-foreground">Type</div>
+                    <div className="text-sm">{plot.type}</div>
                   </div>
                 </div>
               </div>
-
-              {plot.installmentAvailable && (
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-                  <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-600 mr-2" />
-                    <span className="text-green-800 font-medium">Flexible Payment Plans Available</span>
-                  </div>
-                  <p className="text-green-700 text-sm mt-1">
-                    Contact us to discuss payment options that work for your budget.
-                  </p>
-                </div>
-              )}
             </div>
 
             {/* Contact Buttons */}
             <div className="space-y-3">
               <Button size="lg" className="w-full" asChild>
                 <a 
-                  href="https://wa.me/265997141858?text=I'm interested in the property: {{plot.title}}" 
+                  href={`https://wa.me/265997141858?text=I'm interested in the property: ${plot.title}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2"

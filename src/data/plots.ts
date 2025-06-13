@@ -1,112 +1,159 @@
+export interface Plot {
+  id: string;
+  title: string;
+  location: 'Airwing 4 Ways' | 'Airwing Estate' | 'Chitedze';
+  type: 'Residential' | 'Commercial' | 'Mixed Use';
+  size: string;
+  price: string;
+  features: string[];
+  description: string;
+  status: 'Available' | 'Reserved' | 'Sold';
+  imageUrl: string;
+  coordinates?: {
+    lat: number;
+    lng: number;
+  };
+}
 
-import { Plot } from '@/types/plot';
-
-export const mockPlots: Plot[] = [
+export const plots: Plot[] = [
   {
-    id: '1',
-    title: 'Prime Residential Plot - Lilongwe',
-    location: 'Area 25, Lilongwe',
-    district: 'Lilongwe',
-    size: '0.5 hectares',
-    price: 'MK 8,500,000',
-    status: 'available',
-    documentationType: 'Title Deed',
-    installmentAvailable: true,
-    description: 'Beautiful residential plot in the heart of Lilongwe, perfect for building your dream home. Located in a secure and developed area with access to electricity and water.',
+    id: 'aw4w-001',
+    title: 'Premium Residential Plot',
+    location: 'Airwing 4 Ways',
+    type: 'Residential',
+    size: '0.25 Acres',
+    price: 'MWK 15,000,000',
     features: [
-      'Electricity connection available',
-      'Water connection nearby',
-      'Tarred road access',
-      'Secure neighborhood',
-      'Schools and hospitals nearby'
+      'Fully serviced plot',
+      'Access to main road',
+      'Security fencing available',
+      'Water and electricity ready',
+      'Clear title deed'
     ],
-    images: [
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800',
-      'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800'
-    ],
+    description: 'Prime residential plot in the heart of Airwing 4 Ways. Perfect for building your dream home with easy access to amenities and main roads.',
+    status: 'Available',
+    imageUrl: '/plots/airwing-4ways-1.jpg',
     coordinates: {
-      lat: -13.9626,
-      lng: 33.7741
-    },
-    createdAt: '2024-01-15',
-    updatedAt: '2024-01-15'
+      lat: -13.9897,
+      lng: 33.7687
+    }
   },
   {
-    id: '2',
-    title: 'Commercial Plot - Blantyre City',
-    location: 'Mandala, Blantyre',
-    district: 'Blantyre',
-    size: '1200 sqm',
-    price: 'MK 15,000,000',
-    status: 'available',
-    documentationType: 'Title Deed',
-    installmentAvailable: true,
-    description: 'Strategic commercial plot in Blantyre business district. Ideal for office buildings, shops, or mixed-use development.',
+    id: 'aw4w-002',
+    title: 'Commercial Development Plot',
+    location: 'Airwing 4 Ways',
+    type: 'Commercial',
+    size: '0.5 Acres',
+    price: 'MWK 25,000,000',
     features: [
-      'Prime commercial location',
-      'High foot traffic area',
-      'All utilities available',
-      'Public transport access',
-      'Banking facilities nearby'
+      'High visibility location',
+      'Commercial zoning',
+      'Access to main road',
+      'Parking space available',
+      'Development plans included'
     ],
-    images: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800',
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800'
-    ],
+    description: 'Strategic commercial plot ideal for retail, office, or mixed-use development. Located on a busy road with high visibility.',
+    status: 'Available',
+    imageUrl: '/plots/airwing-4ways-2.jpg',
     coordinates: {
-      lat: -15.7861,
-      lng: 35.0058
-    },
-    createdAt: '2024-01-10',
-    updatedAt: '2024-01-10'
+      lat: -13.9898,
+      lng: 33.7688
+    }
   },
   {
-    id: '3',
-    title: 'Agricultural Land - Dedza',
-    location: 'Dedza Rural',
-    district: 'Dedza',
-    size: '5 hectares',
-    price: 'MK 6,000,000',
-    status: 'available',
-    documentationType: 'TA Letter',
-    installmentAvailable: true,
-    description: 'Fertile agricultural land perfect for farming. Rich soil suitable for various crops including maize, tobacco, and vegetables.',
+    id: 'awe-001',
+    title: 'Estate Residential Plot',
+    location: 'Airwing Estate',
+    type: 'Residential',
+    size: '0.3 Acres',
+    price: 'MWK 18,000,000',
+    features: [
+      'Gated community',
+      '24/7 security',
+      'Landscaped surroundings',
+      'Community amenities',
+      'Clear title deed'
+    ],
+    description: 'Beautiful residential plot in the prestigious Airwing Estate. Part of a well-planned community with modern amenities.',
+    status: 'Available',
+    imageUrl: '/plots/airwing-estate-1.jpg',
+    coordinates: {
+      lat: -13.9899,
+      lng: 33.7689
+    }
+  },
+  {
+    id: 'awe-002',
+    title: 'Mixed-Use Development Plot',
+    location: 'Airwing Estate',
+    type: 'Mixed Use',
+    size: '0.75 Acres',
+    price: 'MWK 35,000,000',
+    features: [
+      'Mixed-use zoning',
+      'High development potential',
+      'Access to main roads',
+      'Utilities available',
+      'Development plans included'
+    ],
+    description: 'Large mixed-use plot perfect for residential and commercial development. Located in a growing area with high potential.',
+    status: 'Available',
+    imageUrl: '/plots/airwing-estate-2.jpg',
+    coordinates: {
+      lat: -13.9900,
+      lng: 33.7690
+    }
+  },
+  {
+    id: 'ch-001',
+    title: 'Agricultural Plot',
+    location: 'Chitedze',
+    type: 'Residential',
+    size: '1 Acre',
+    price: 'MWK 12,000,000',
     features: [
       'Fertile soil',
-      'Natural water source',
-      'Good drainage',
-      'Easy access road',
-      'Farming community nearby'
+      'Water source available',
+      'Access road',
+      'Agricultural potential',
+      'Clear title deed'
     ],
-    images: [
-      'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800',
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800'
-    ],
-    createdAt: '2024-01-12',
-    updatedAt: '2024-01-12'
+    description: 'Spacious plot in Chitedze area, perfect for agricultural use or residential development. Features fertile soil and water access.',
+    status: 'Available',
+    imageUrl: '/plots/chitedze-1.jpg',
+    coordinates: {
+      lat: -13.9901,
+      lng: 33.7691
+    }
   },
   {
-    id: '4',
-    title: 'Residential Plot - Mzuzu',
-    location: 'Chibanja, Mzuzu',
-    district: 'Mzuzu',
-    size: '0.3 hectares',
-    price: 'MK 4,500,000',
-    status: 'reserved',
-    documentationType: 'Title Deed',
-    installmentAvailable: false,
-    description: 'Well-located residential plot in growing Mzuzu suburb. Quiet neighborhood with beautiful views.',
+    id: 'ch-002',
+    title: 'Residential Plot with Garden',
+    location: 'Chitedze',
+    type: 'Residential',
+    size: '0.4 Acres',
+    price: 'MWK 14,000,000',
     features: [
-      'Quiet residential area',
-      'Mountain views',
-      'Good soil for gardening',
+      'Large garden space',
+      'Peaceful surroundings',
       'Access to main road',
-      'Growing community'
+      'Water and electricity ready',
+      'Clear title deed'
     ],
-    images: [
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800'
-    ],
-    createdAt: '2024-01-08',
-    updatedAt: '2024-01-14'
+    description: 'Beautiful residential plot with ample garden space. Located in a peaceful area of Chitedze with good access to amenities.',
+    status: 'Available',
+    imageUrl: '/plots/chitedze-2.jpg',
+    coordinates: {
+      lat: -13.9902,
+      lng: 33.7692
+    }
   }
 ];
+
+export const getPlotsByLocation = (location: Plot['location']) => {
+  return plots.filter(plot => plot.location === location);
+};
+
+export const getFeaturedPlots = () => {
+  return plots.filter(plot => plot.status === 'Available').slice(0, 3);
+};

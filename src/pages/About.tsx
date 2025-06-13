@@ -38,7 +38,8 @@ const About = () => {
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Many hands make light work - this philosophy drives everything we do at Unity Investments. 
-            We believe in bringing people together to achieve their land ownership dreams.
+            Established in 2023, we specialize in architectural designs, selling of vacant plots, 
+            construction supervision, and calculation of Bills of Quantity.
           </p>
         </div>
 
@@ -49,41 +50,56 @@ const About = () => {
               Our Story
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Unity Investments was founded by <strong>Edward Kambatuwa</strong>, a dedicated real estate 
-              professional with a passion for helping Malawians secure their future through land ownership. 
-              Located opposite Central Hospital, we have become a trusted name in the real estate industry.
+              Unity Investments was founded in 2023 by <strong>Edward Kambatuwa</strong>, a holder of 
+              Bachelor's of Social Sciences in Economics. With about 4 years of experience in Real Estate, 
+              Edward brings valuable expertise to help clients navigate the real estate market.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Edward has helped numerous clients navigate the complex world of land acquisition, ensuring 
-              that every transaction is transparent, legal, and beneficial to our clients. His expertise 
-              in architectural design combined with real estate knowledge makes Unity Investments a 
-              one-stop solution for your land and building needs.
+              As a registered company with the Malawi Government, we currently offer plots in:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground space-y-2">
+              <li>Airwing 4 Ways</li>
+              <li>Airwing (after Barons Estate)</li>
+              <li>Chitedze</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed mt-4">
+              Our working hours are from 07:30 to 16:00, Monday through Friday. We're committed to 
+              providing professional service and ensuring all our clients' real estate needs are met 
+              with the highest standards of excellence.
             </p>
           </div>
           
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-primary to-accent rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
-              <ul className="space-y-3">
+              <h3 className="text-2xl font-bold mb-4">Contact Information</h3>
+              <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>All plots are verified and legally documented</span>
+                  <div>
+                    <span className="font-semibold">Phone:</span>
+                    <a href="tel:+265997141858" className="block hover:underline">+265 99 714 1858</a>
+                  </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Flexible payment plans to suit your budget</span>
+                  <div>
+                    <span className="font-semibold">Personal Email:</span>
+                    <a href="mailto:kambatuwaedward@gmail.com" className="block hover:underline">kambatuwaedward@gmail.com</a>
+                  </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Professional architectural design services</span>
+                  <div>
+                    <span className="font-semibold">Company Email:</span>
+                    <a href="mailto:unityinvestment0@gmail.com" className="block hover:underline">unityinvestment0@gmail.com</a>
+                  </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Transparent and honest business practices</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Ongoing support throughout your journey</span>
+                  <div>
+                    <span className="font-semibold">Working Hours:</span>
+                    <span className="block">07:30 - 16:00 (Monday - Friday)</span>
+                  </div>
                 </li>
               </ul>
             </div>

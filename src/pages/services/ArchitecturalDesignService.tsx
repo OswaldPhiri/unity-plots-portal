@@ -1,154 +1,174 @@
-import Layout from '@/components/layout/Layout';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight, DraftingCompass, Building2, Ruler, Lightbulb } from 'lucide-react';
+import { Building2, Ruler, Palette, Lightbulb, ArrowRight, CheckCircle } from 'lucide-react';
+import Layout from '@/components/layout/Layout';
+import { Button } from '@/components/ui/button';
+
+const services = [
+  {
+    icon: Building2,
+    title: 'Residential Design',
+    description: 'Custom home designs that reflect your lifestyle and preferences, from modern to traditional styles.',
+    features: [
+      'Custom floor plans',
+      '3D visualizations',
+      'Space optimization',
+      'Natural lighting design',
+      'Sustainable features'
+    ]
+  },
+  {
+    icon: Ruler,
+    title: 'Commercial Design',
+    description: 'Professional designs for commercial spaces that maximize functionality and appeal.',
+    features: [
+      'Office layouts',
+      'Retail spaces',
+      'Restaurant designs',
+      'Industrial facilities',
+      'Mixed-use developments'
+    ]
+  },
+  {
+    icon: Palette,
+    title: 'Interior Design',
+    description: 'Complete interior design solutions that create beautiful and functional spaces.',
+    features: [
+      'Space planning',
+      'Color schemes',
+      'Material selection',
+      'Furniture layout',
+      'Lighting design'
+    ]
+  },
+  {
+    icon: Lightbulb,
+    title: 'Renovation & Extension',
+    description: 'Transform your existing space with our renovation and extension services.',
+    features: [
+      'Structural assessment',
+      'Design integration',
+      'Space optimization',
+      'Modern upgrades',
+      'Permit assistance'
+    ]
+  }
+];
+
+const process = [
+  {
+    step: 1,
+    title: 'Initial Consultation',
+    description: 'We discuss your requirements, budget, and vision for the project.'
+  },
+  {
+    step: 2,
+    title: 'Concept Design',
+    description: 'We create initial sketches and concepts based on your requirements.'
+  },
+  {
+    step: 3,
+    title: 'Design Development',
+    description: 'Detailed designs are developed with 3D visualizations and material selections.'
+  },
+  {
+    step: 4,
+    title: 'Final Documentation',
+    description: 'Complete construction drawings and specifications are prepared.'
+  }
+];
 
 const ArchitecturalDesignService = () => {
-  const services = [
-    {
-      icon: DraftingCompass,
-      title: 'Residential Design',
-      description: 'Custom home designs that reflect your lifestyle and preferences, from modern to traditional styles.'
-    },
-    {
-      icon: Building2,
-      title: 'Commercial Design',
-      description: 'Professional designs for offices, retail spaces, and other commercial properties.'
-    },
-    {
-      icon: Ruler,
-      title: 'Site Planning',
-      description: 'Comprehensive site analysis and planning to maximize your property\'s potential.'
-    },
-    {
-      icon: Lightbulb,
-      title: 'Design Consultation',
-      description: 'Expert advice on materials, layouts, and sustainable building practices.'
-    }
-  ];
-
-  const process = [
-    {
-      step: 1,
-      title: 'Initial Consultation',
-      description: 'We discuss your requirements, budget, and vision for the project.'
-    },
-    {
-      step: 2,
-      title: 'Concept Design',
-      description: 'We create initial design concepts based on your needs and preferences.'
-    },
-    {
-      step: 3,
-      title: 'Design Development',
-      description: 'Refining the chosen concept with detailed drawings and specifications.'
-    },
-    {
-      step: 4,
-      title: 'Final Documentation',
-      description: 'Complete construction drawings and documentation for your project.'
-    }
-  ];
-
   return (
-    <Layout>
-      <div className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Architectural Design Services
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Transform your land into the perfect space with our professional architectural 
-            design services. From concept to construction, we're here to bring your vision to life.
-          </p>
-        </div>
+    <div className="container mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-8">Architectural Designs</h1>
+        <p className="text-lg text-gray-600 mb-8 text-center">
+          Transform your vision into reality with our professional architectural design services. 
+          From residential homes to commercial buildings, we create functional and aesthetically pleasing designs.
+        </p>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {services.map((service, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="w-8 h-8 text-primary" />
-                </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{service.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <div className="grid gap-8 md:grid-cols-2 mb-12">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-semibold mb-4">Our Design Services</h2>
+            <ul className="space-y-3">
+              <li className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-primary mr-2 mt-1" />
+                <span>Custom residential designs tailored to your needs</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-primary mr-2 mt-1" />
+                <span>Commercial building plans and layouts</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-primary mr-2 mt-1" />
+                <span>3D visualizations and renderings</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-primary mr-2 mt-1" />
+                <span>Sustainable and energy-efficient designs</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-primary mr-2 mt-1" />
+                <span>Building permit assistance</span>
+              </li>
+              <li className="flex items-start">
+                <CheckCircle className="w-5 h-5 text-primary mr-2 mt-1" />
+                <span>Design consultations and revisions</span>
+              </li>
+            </ul>
+          </div>
 
-        {/* Process Section */}
-        <div className="bg-muted rounded-lg p-8 mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-            Our Design Process
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {process.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-primary-foreground font-bold">{step.step}</span>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-semibold mb-4">Our Process</h2>
+            <ol className="space-y-4">
+              <li className="flex items-start">
+                <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">1</div>
+                <div>
+                  <h3 className="font-semibold">Initial Consultation</h3>
+                  <p className="text-gray-600">We discuss your requirements, budget, and vision for the project</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                <p className="text-muted-foreground">
-                  {step.description}
-                </p>
-              </div>
-            ))}
+              </li>
+              <li className="flex items-start">
+                <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">2</div>
+                <div>
+                  <h3 className="font-semibold">Concept Development</h3>
+                  <p className="text-gray-600">We create initial sketches and concepts based on your needs</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">3</div>
+                <div>
+                  <h3 className="font-semibold">Detailed Design</h3>
+                  <p className="text-gray-600">We develop comprehensive plans and 3D visualizations</p>
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-1">4</div>
+                <div>
+                  <h3 className="font-semibold">Final Approval</h3>
+                  <p className="text-gray-600">We refine the design based on your feedback and prepare final documents</p>
+                </div>
+              </li>
+            </ol>
           </div>
         </div>
 
-        {/* Why Choose Us Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-            Why Choose Our Design Services?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle>Expert Design Team</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Our team of experienced architects and designers brings years of expertise 
-                  to every project. We combine creativity with practical knowledge to create 
-                  designs that are both beautiful and functional.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Comprehensive Service</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  From initial consultation to final construction drawings, we provide a 
-                  complete design service. We handle everything from concept development 
-                  to detailed specifications and documentation.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="bg-gradient-to-br from-primary to-accent rounded-lg p-8 text-white text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Start Your Design Project?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Contact us today to discuss your architectural design needs and schedule a consultation.
+        <div className="bg-primary/5 p-8 rounded-lg text-center">
+          <h2 className="text-2xl font-semibold mb-4">Ready to Start Your Project?</h2>
+          <p className="text-gray-600 mb-6">
+            Contact us today to discuss your architectural design needs and get a free consultation.
           </p>
-          <Button size="lg" variant="secondary" asChild>
-            <Link to="/contact">Get in Touch</Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild className="bg-primary hover:bg-primary/90">
+              <Link to="/contact">Contact Us</Link>
+            </Button>
+            <Button asChild variant="outline">
+              <Link to="/services">View All Services</Link>
+            </Button>
+          </div>
         </div>
       </div>
-    </Layout>
+    </div>
   );
 };
 
