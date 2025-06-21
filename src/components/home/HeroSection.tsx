@@ -69,18 +69,18 @@ const HeroSection = () => {
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center items-center gap-8 text-white/80">
-              <div className="flex items-center space-x-2">
+            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mt-12">
+              <div className="flex items-center space-x-2 bg-white text-foreground p-3 rounded-lg shadow-md">
                 <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
-                <span className="text-sm">Verified Properties</span>
+                <span className="text-sm font-medium">Verified Properties</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 bg-white text-foreground p-3 rounded-lg shadow-md">
                 <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
-                <span className="text-sm">Legal Documentation</span>
+                <span className="text-sm font-medium">Legal Documentation</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center space-x-2 bg-white text-foreground p-3 rounded-lg shadow-md">
                 <div className="w-2 h-2 bg-yellow-300 rounded-full"></div>
-                <span className="text-sm">Professional Service</span>
+                <span className="text-sm font-medium">Professional Service</span>
               </div>
             </div>
           </div>
