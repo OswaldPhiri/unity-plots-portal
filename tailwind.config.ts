@@ -62,7 +62,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Unity Investments brand colors
+				// Real Investments brand colors
 				'unity-orange': 'hsl(var(--unity-orange))',
 				'unity-red': 'hsl(var(--unity-red))',
 				'unity-dark-blue': 'hsl(var(--unity-dark-blue))',
@@ -105,3 +105,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

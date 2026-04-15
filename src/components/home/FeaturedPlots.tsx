@@ -16,7 +16,7 @@ const FeaturedPlots = () => {
             Featured Properties
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our handpicked selection of premium land plots across Malawi.
+            Discover our handpicked selection of premium land plots in high-potential locations.
           </p>
         </div>
 

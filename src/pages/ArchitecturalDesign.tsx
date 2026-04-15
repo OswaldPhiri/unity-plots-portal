@@ -267,14 +267,14 @@ const ArchitecturalDesign = () => {
                 </p>
                 <div className="space-y-2">
                   <Button className="w-full" asChild>
-                    <a href="tel:+265997141858" className="flex items-center justify-center space-x-2">
+                    <a href="tel:+15551234567" className="flex items-center justify-center space-x-2">
                       <Phone className="w-4 h-4" />
                       <span>Call Now</span>
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a 
-                      href="https://wa.me/265997141858" 
+                      href="https://wa.me/15551234567" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center justify-center space-x-2"

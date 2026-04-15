@@ -1,73 +1,87 @@
-# Welcome to your Lovable project
+# Real Investments Portal
 
-## Project info
+A modern React web app for showcasing real estate listings and related professional services.
+This project demonstrates a clean, conversion-focused UI for property discovery, service exploration, and lead capture.
 
-**URL**: https://lovable.dev/projects/c59710dc-8444-400f-9835-10cbd9c14622
+## Live Website
 
-## How can I edit this code?
+Add your deployed URL here once available:
 
-There are several ways of editing your application.
+- [Live Demo](https://your-live-site-url.example)
 
-**Use Lovable**
+## Why This Project
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c59710dc-8444-400f-9835-10cbd9c14622) and start prompting.
+This repository highlights practical frontend engineering skills for employer review, including:
 
-Changes made via Lovable will be committed automatically to this repo.
+- Component-driven UI architecture
+- Responsive design across device sizes
+- Reusable page sections and design system usage
+- User-friendly filtering and property detail flows
+- Professional service content and contact UX
 
-**Use your preferred IDE**
+## Key Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Home page with marketing hero and featured listings
+- Plot listing pages with filtering and details
+- Service pages for architectural design, supervision, and quantity services
+- Contact page with inquiry form and direct action buttons
+- Reusable layout, cards, and shared UI components
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tech Stack
 
-Follow these steps:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- React Router
+- Lucide Icons
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Getting Started
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Prerequisites
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Node.js 18+
+- npm 9+
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Installation
+
+```bash
+git clone <YOUR_GITHUB_REPO_URL>
+cd unity-plots-portal
+npm install
+```
+
+### Run Locally
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+### Preview Production Build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run preview
+```
 
-## What technologies are used for this project?
+## Project Structure
 
-This project is built with:
+```text
+src/
+  components/    # Reusable UI and layout components
+  data/          # Plot and listing data
+  pages/         # Route-level pages
+  hooks/         # Custom React hooks
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Notes for Recruiters
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c59710dc-8444-400f-9835-10cbd9c14622) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- This project is presented as a portfolio-quality frontend build.
+- All contact data and addresses in this repository are placeholder/demo values.
+- The codebase is structured for readability, extension, and rapid feature iteration.

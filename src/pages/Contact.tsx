@@ -56,7 +56,7 @@ const Contact = () => {
             Get in Touch
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to secure your future with Unity Investments? We're here to help you 
+            Ready to secure your future with Real Investments? We're here to help you 
             find the perfect plot and answer all your questions.
           </p>
         </div>
@@ -76,8 +76,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Office Location</h3>
                     <p className="text-muted-foreground">
-                      Opposite Central Hospital<br />
-                      Lilongwe, Malawi
+                      123 Market Avenue<br />
+                      Capital City, Region 1
                     </p>
                   </div>
                 </div>
@@ -89,8 +89,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone Numbers</h3>
                     <p className="text-muted-foreground">
-                      <a href="tel:+265997141858" className="hover:text-primary transition-colors">
-                        +265 99 714 1858
+                      <a href="tel:+15551234567" className="hover:text-primary transition-colors">
+                        +1 (555) 123-4567
                       </a>
                     </p>
                   </div>
@@ -104,16 +104,10 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">Email Addresses</h3>
                     <p className="text-muted-foreground">
                       <a 
-                        href="mailto:unityinvestment0@gmail.com" 
+                        href="mailto:hello@realinvestments.example" 
                         className="hover:text-primary transition-colors block mb-2"
                       >
-                        unityinvestment0@gmail.com
-                      </a>
-                      <a 
-                        href="mailto:kambatuwaedward@gmail.com" 
-                        className="hover:text-primary transition-colors block"
-                      >
-                        kambatuwaedward@gmail.com
+                        hello@realinvestments.example
                       </a>
                     </p>
                   </div>
@@ -142,7 +136,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" asChild className="flex-1">
                   <a 
-                    href="https://wa.me/265997141858?text=Hello, I'm interested in Unity Investment's services and would like more information." 
+                    href="https://wa.me/15551234567?text=Hello, I'm interested in Real Investments services and would like more information." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2"
@@ -154,7 +148,7 @@ const Contact = () => {
                 
                 <Button size="lg" variant="outline" asChild className="flex-1">
                   <a 
-                    href="tel:+265997141858" 
+                    href="tel:+15551234567" 
                     className="flex items-center justify-center space-x-2"
                   >
                     <Phone className="w-5 h-5" />
@@ -253,7 +247,7 @@ const Contact = () => {
               Find Our Office
             </h2>
             <p className="text-lg text-muted-foreground">
-              Visit us at our convenient location opposite Central Hospital in Lilongwe.
+              Visit our sample office location for in-person consultations.
             </p>
           </div>
           
@@ -261,14 +255,14 @@ const Contact = () => {
             <div className="text-center">
               <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-foreground mb-2">
-                Unity Investments Office
+                Real Investments Office
               </h3>
               <p className="text-muted-foreground">
-                Opposite Central Hospital, Lilongwe
+                123 Market Avenue, Capital City
               </p>
               <Button variant="outline" className="mt-4">
                 <a 
-                  href="https://maps.google.com/?q=Central+Hospital+Lilongwe" 
+                  href="https://maps.google.com/?q=123+Market+Avenue+Capital+City" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -284,3 +278,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

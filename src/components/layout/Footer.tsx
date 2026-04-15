@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <img 
                 src="/logo.png" 
-                alt="Unity Investments Logo" 
+                alt="Real Investments Logo" 
                 className="h-24 w-auto object-contain"
               />
               <div>
@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              Your trusted partner for architectural design and secure land investments in Malawi.
+              Your trusted partner for architectural design and secure land investments.
             </p>
           </div>
 
@@ -48,18 +48,18 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-sm text-muted-foreground">Opposite Central Hospital</span>
+                <span className="text-sm text-muted-foreground">123 Market Avenue, Capital City</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-accent" />
-                <a href="tel:+265997141858" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  +265 99 714 1858
+                <a href="tel:+15551234567" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                  +1 (555) 123-4567
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent" />
-                <a href="mailto:unityinvestment0@gmail.com" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  unityinvestment0@gmail.com
+                <a href="mailto:hello@realinvestments.example" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                  hello@realinvestments.example
                 </a>
               </div>
               <div className="flex items-center space-x-2">
@@ -85,18 +85,18 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Unity Investments. All rights reserved.
+            © 2024 Real Investments. All rights reserved.
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <a 
-              href="tel:+265997141858" 
+              href="tel:+15551234567" 
               className="flex items-center space-x-1 text-sm text-muted-foreground hover:text-accent transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span>Call</span>
             </a>
             <a 
-              href="https://wa.me/265997141858" 
+              href="https://wa.me/15551234567" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-1 text-sm text-muted-foreground hover:text-accent transition-colors"
@@ -112,3 +112,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

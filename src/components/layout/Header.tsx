@@ -24,7 +24,7 @@ const Header = () => {
           <Link to="/" className="flex flex-col items-center py-1 sm:py-2">
             <img 
               src="/logo.png" 
-              alt="Unity Investments Logo" 
+              alt="Real Investments Logo" 
               className="h-12 w-auto object-contain sm:h-16 md:h-20"
             />
             <p className="text-xs sm:text-sm text-foreground italic mt-1 sm:mt-2 hidden sm:block">Many hands make light work</p>
@@ -48,14 +48,14 @@ const Header = () => {
           {/* Contact Buttons - Desktop */}
           <div className="hidden lg:flex items-center space-x-3">
             <Button size="sm" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
-              <a href="tel:+265997141858" className="flex items-center space-x-1">
+              <a href="tel:+15551234567" className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
                 <span>Call</span>
               </a>
             </Button>
             <Button size="sm" className="bg-primary hover:bg-primary/90" asChild>
               <a 
-                href="https://wa.me/265997141858" 
+                href="https://wa.me/15551234567" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-1 text-primary-foreground"
@@ -94,14 +94,14 @@ const Header = () => {
               ))}
               <div className="flex flex-col space-y-3 pt-4">
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white w-full" asChild>
-                  <a href="tel:+265997141858" className="flex items-center justify-center space-x-2">
+                  <a href="tel:+15551234567" className="flex items-center justify-center space-x-2">
                     <Phone className="w-5 h-5" />
                     <span>Call Now</span>
                   </a>
                 </Button>
                 <Button size="lg" className="bg-primary hover:bg-primary/90 w-full" asChild>
                   <a 
-                    href="https://wa.me/265997141858" 
+                    href="https://wa.me/15551234567" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2 text-primary-foreground"
@@ -120,3 +120,4 @@ const Header = () => {
 };
 
 export default Header;
+

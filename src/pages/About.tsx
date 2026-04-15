@@ -34,10 +34,10 @@ const About = () => {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About Unity Investments
+            About Real Investments
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Many hands make light work - this philosophy drives everything we do at Unity Investments. 
+            Many hands make light work - this philosophy drives everything we do at Real Investments. 
             Established in 2023, we specialize in architectural designs, selling of vacant plots, 
             construction supervision, and calculation of Bills of Quantity.
           </p>
@@ -50,17 +50,17 @@ const About = () => {
               Our Story
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Unity Investments was founded in 2023 by <strong>Edward Kambatuwa</strong>, a holder of 
-              Bachelor's of Social Sciences in Economics. With about 4 years of experience in Real Estate, 
-              Edward brings valuable expertise to help clients navigate the real estate market.
+              Real Investments was founded in 2023 by a multidisciplinary team of property and design
+              professionals. We combine market insight, technical knowledge, and practical execution to help
+              clients make confident real estate and construction decisions.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              As a registered company with the Malawi Government, we currently offer plots in:
+              We currently offer plots in a range of carefully selected growth corridors, including:
             </p>
             <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>Airwing 4 Ways</li>
-              <li>Airwing (after Barons Estate)</li>
-              <li>Chitedze</li>
+              <li>North Ridge</li>
+              <li>Greenfield Estate</li>
+              <li>Lakeside</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
               Our working hours are from 07:30 to 16:00, Monday through Friday. We're committed to 
@@ -77,21 +77,14 @@ const About = () => {
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
                   <div>
                     <span className="font-semibold">Phone:</span>
-                    <a href="tel:+265997141858" className="block hover:underline">+265 99 714 1858</a>
+                    <a href="tel:+15551234567" className="block hover:underline">+1 (555) 123-4567</a>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
                   <div>
-                    <span className="font-semibold">Personal Email:</span>
-                    <a href="mailto:kambatuwaedward@gmail.com" className="block hover:underline">kambatuwaedward@gmail.com</a>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <div>
-                    <span className="font-semibold">Company Email:</span>
-                    <a href="mailto:unityinvestment0@gmail.com" className="block hover:underline">unityinvestment0@gmail.com</a>
+                    <span className="font-semibold">Email:</span>
+                    <a href="mailto:hello@realinvestments.example" className="block hover:underline">hello@realinvestments.example</a>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -149,14 +142,14 @@ const About = () => {
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
-              <a href="tel:+265997141858" className="flex items-center space-x-2">
+              <a href="tel:+15551234567" className="flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>Call Us Today</span>
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
               <a 
-                href="https://wa.me/265997141858" 
+                href="https://wa.me/15551234567" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
@@ -173,3 +166,4 @@ const About = () => {
 };
 
 export default About;
+

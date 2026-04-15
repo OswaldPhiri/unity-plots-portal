@@ -31,7 +31,7 @@ const LandPlotSales = () => {
             Land Plot Sales
           </h1>
           <p className="text-xl text-muted-foreground">
-            Secure your future with premium land plots across Malawi
+            Secure your future with premium land plots in high-growth locations
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const LandPlotSales = () => {
                 Why Choose Our Land Plots?
               </h2>
               <p className="text-muted-foreground mb-6">
-                We offer carefully selected, verified land plots in prime locations across Malawi. 
+                We offer carefully selected, verified land plots in prime locations. 
                 Our commitment to transparency and legal compliance ensures your investment is secure.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -199,14 +199,14 @@ const LandPlotSales = () => {
                 </p>
                 <div className="space-y-2">
                   <Button className="w-full" asChild>
-                    <a href="tel:+265997141858" className="flex items-center justify-center space-x-2">
+                    <a href="tel:+15551234567" className="flex items-center justify-center space-x-2">
                       <Phone className="w-4 h-4" />
                       <span>Call Now</span>
                     </a>
                   </Button>
                   <Button variant="outline" className="w-full" asChild>
                     <a 
-                      href="https://wa.me/265997141858" 
+                      href="https://wa.me/15551234567" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center justify-center space-x-2"

@@ -1,7 +1,7 @@
 export interface Plot {
   id: string;
   title: string;
-  location: 'Airwing 4 Ways' | 'Airwing Estate' | 'Chitedze';
+  location: 'North Ridge' | 'Greenfield Estate' | 'Lakeside';
   type: 'Residential' | 'Commercial' | 'Mixed Use';
   size: string;
   price: string;
@@ -19,7 +19,7 @@ export const plots: Plot[] = [
   {
     id: 'aw4w-001',
     title: 'Premium Residential Plot',
-    location: 'Airwing 4 Ways',
+    location: 'North Ridge',
     type: 'Residential',
     size: '0.25 Acres',
     price: 'MWK 15,000,000',
@@ -30,9 +30,9 @@ export const plots: Plot[] = [
       'Water and electricity ready',
       'Clear title deed'
     ],
-    description: 'Prime residential plot in the heart of Airwing 4 Ways. Perfect for building your dream home with easy access to amenities and main roads.',
+    description: 'Prime residential plot in the heart of North Ridge. Perfect for building your dream home with easy access to amenities and main roads.',
     status: 'Available',
-    imageUrl: '/plots/airwing-4ways-1.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
       lat: -13.9897,
       lng: 33.7687
@@ -41,7 +41,7 @@ export const plots: Plot[] = [
   {
     id: 'aw4w-002',
     title: 'Commercial Development Plot',
-    location: 'Airwing 4 Ways',
+    location: 'North Ridge',
     type: 'Commercial',
     size: '0.5 Acres',
     price: 'MWK 25,000,000',
@@ -54,7 +54,7 @@ export const plots: Plot[] = [
     ],
     description: 'Strategic commercial plot ideal for retail, office, or mixed-use development. Located on a busy road with high visibility.',
     status: 'Available',
-    imageUrl: '/plots/airwing-4ways-2.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
       lat: -13.9898,
       lng: 33.7688
@@ -63,7 +63,7 @@ export const plots: Plot[] = [
   {
     id: 'awe-001',
     title: 'Estate Residential Plot',
-    location: 'Airwing Estate',
+    location: 'Greenfield Estate',
     type: 'Residential',
     size: '0.3 Acres',
     price: 'MWK 18,000,000',
@@ -74,9 +74,9 @@ export const plots: Plot[] = [
       'Community amenities',
       'Clear title deed'
     ],
-    description: 'Beautiful residential plot in the prestigious Airwing Estate. Part of a well-planned community with modern amenities.',
+    description: 'Beautiful residential plot in the prestigious Greenfield Estate. Part of a well-planned community with modern amenities.',
     status: 'Available',
-    imageUrl: '/plots/airwing-estate-1.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
       lat: -13.9899,
       lng: 33.7689
@@ -85,7 +85,7 @@ export const plots: Plot[] = [
   {
     id: 'awe-002',
     title: 'Mixed-Use Development Plot',
-    location: 'Airwing Estate',
+    location: 'Greenfield Estate',
     type: 'Mixed Use',
     size: '0.75 Acres',
     price: 'MWK 35,000,000',
@@ -107,7 +107,7 @@ export const plots: Plot[] = [
   {
     id: 'ch-001',
     title: 'Agricultural Plot',
-    location: 'Chitedze',
+    location: 'Lakeside',
     type: 'Residential',
     size: '1 Acre',
     price: 'MWK 12,000,000',
@@ -118,7 +118,7 @@ export const plots: Plot[] = [
       'Agricultural potential',
       'Clear title deed'
     ],
-    description: 'Spacious plot in Chitedze area, perfect for agricultural use or residential development. Features fertile soil and water access.',
+    description: 'Spacious plot in the Lakeside area, perfect for agricultural use or residential development. Features fertile soil and water access.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
@@ -129,7 +129,7 @@ export const plots: Plot[] = [
   {
     id: 'ch-002',
     title: 'Residential Plot with Garden',
-    location: 'Chitedze',
+    location: 'Lakeside',
     type: 'Residential',
     size: '0.4 Acres',
     price: 'MWK 14,000,000',
@@ -140,7 +140,7 @@ export const plots: Plot[] = [
       'Water and electricity ready',
       'Clear title deed'
     ],
-    description: 'Beautiful residential plot with ample garden space. Located in a peaceful area of Chitedze with good access to amenities.',
+    description: 'Beautiful residential plot with ample garden space. Located in a peaceful area of Lakeside with good access to amenities.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {

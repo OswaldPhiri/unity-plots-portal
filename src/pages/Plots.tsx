@@ -65,7 +65,7 @@ const Plots = () => {
             Available Properties
           </h1>
           <p className="text-lg text-muted-foreground">
-            Explore our collection of premium land plots across Malawi
+            Explore our collection of premium land plots in growing markets
           </p>
         </div>
 

@@ -8,10 +8,10 @@ const Services = () => {
   const services = [
     {
       title: "Selling of Vacant Plots",
-      description: "Access prime residential and commercial plots in strategic locations across Malawi. We offer secure land ownership with clear titles and comprehensive documentation.",
+      description: "Access prime residential and commercial plots in strategic locations. We offer secure land ownership with clear titles and comprehensive documentation.",
       icon: "🏡",
       features: [
-        "Prime locations in Lilongwe, Blantyre, and Mzuzu",
+        "Prime locations in high-growth corridors",
         "Clear land titles and documentation",
         "Flexible payment plans available",
         "Secure land ownership",
@@ -128,7 +128,7 @@ const Services = () => {
                 <Link to="/contact">Schedule a Consultation</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
-                <a href="tel:+265997141858">Call Us Now</a>
+                <a href="tel:+15551234567">Call Us Now</a>
               </Button>
             </div>
           </div>

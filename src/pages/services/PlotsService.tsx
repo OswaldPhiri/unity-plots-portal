@@ -67,9 +67,9 @@ const LocationSection = ({ location, plots }: { location: Plot['location']; plot
 );
 
 const PlotsService = () => {
-  const [activeLocation, setActiveLocation] = useState<Plot['location']>('Airwing 4 Ways');
+  const [activeLocation, setActiveLocation] = useState<Plot['location']>('North Ridge');
   const [showMap, setShowMap] = useState(false);
-  const locations: Plot['location'][] = ['Airwing 4 Ways', 'Airwing Estate', 'Chitedze'];
+  const locations: Plot['location'][] = ['North Ridge', 'Greenfield Estate', 'Lakeside'];
 
   return (
     <Layout>
@@ -83,7 +83,7 @@ const PlotsService = () => {
                 Land Plot Sales
               </h1>
               <p className="text-xl mb-8">
-                Discover prime plots in Lilongwe's most sought-after locations. From residential to commercial,
+                Discover prime plots in high-demand locations. From residential to commercial,
                 we offer carefully selected properties with clear titles and excellent development potential.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -196,7 +196,7 @@ const PlotsService = () => {
                 Contact Us
               </Link>
               <a
-                href="tel:+265888123456"
+                href="tel:+15551234567"
                 className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-medium transition-colors"
               >
                 Call Now

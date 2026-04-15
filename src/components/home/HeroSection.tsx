@@ -17,12 +17,12 @@ const HeroSection = () => {
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Secure Your Future with{' '}
-              <span className="text-yellow-300">Unity Investments</span>
+              <span className="text-yellow-300">Real Investments</span>
             </h1>
             
             <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed">
               We specialize in architectural design and selling affordable, secure land plots 
-              across Malawi. With flexible payments and professional guidance, land ownership 
+              in high-growth locations. With flexible payments and professional guidance, land ownership 
               has never been easier.
             </p>
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 asChild 
                 className="border-2 border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <a href="tel:+265997141858" className="flex items-center space-x-2">
+                <a href="tel:+15551234567" className="flex items-center space-x-2">
                   <Phone className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                   <span>Call Now</span>
                 </a>
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 className="border-2 border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <a 
-                  href="https://wa.me/265997141858" 
+                  href="https://wa.me/15551234567" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2"
@@ -91,3 +91,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
