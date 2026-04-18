@@ -76,8 +76,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Office Location</h3>
                     <p className="text-muted-foreground">
-                      123 Market Avenue<br />
-                      Capital City, Region 1
+                      456 Innovation Drive<br />
+                      Future City, Region X
                     </p>
                   </div>
                 </div>
@@ -89,8 +89,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">Phone Numbers</h3>
                     <p className="text-muted-foreground">
-                      <a href="tel:+15551234567" className="hover:text-primary transition-colors">
-                        +1 (555) 123-4567
+                      <a href="tel:+10000000000" className="hover:text-primary transition-colors">
+                        +1 (000) 000-0000
                       </a>
                     </p>
                   </div>
@@ -104,10 +104,10 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">Email Addresses</h3>
                     <p className="text-muted-foreground">
                       <a 
-                        href="mailto:hello@realinvestments.example" 
+                        href="mailto:contact@realinvestments.example" 
                         className="hover:text-primary transition-colors block mb-2"
                       >
-                        hello@realinvestments.example
+                        contact@realinvestments.example
                       </a>
                     </p>
                   </div>
@@ -136,7 +136,7 @@ const Contact = () => {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" asChild className="flex-1">
                   <a 
-                    href="https://wa.me/15551234567?text=Hello, I'm interested in Real Investments services and would like more information." 
+                    href="https://wa.me/0000000000?text=Hello, I'm interested in Real Investments services and would like more information." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2"
@@ -148,7 +148,7 @@ const Contact = () => {
                 
                 <Button size="lg" variant="outline" asChild className="flex-1">
                   <a 
-                    href="tel:+15551234567" 
+                    href="tel:+10000000000" 
                     className="flex items-center justify-center space-x-2"
                   >
                     <Phone className="w-5 h-5" />
@@ -258,11 +258,11 @@ const Contact = () => {
                 Real Investments Office
               </h3>
               <p className="text-muted-foreground">
-                123 Market Avenue, Capital City
+                456 Innovation Drive, Future City
               </p>
               <Button variant="outline" className="mt-4">
                 <a 
-                  href="https://maps.google.com/?q=123+Market+Avenue+Capital+City" 
+                  href="https://maps.google.com/?q=Future+City" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

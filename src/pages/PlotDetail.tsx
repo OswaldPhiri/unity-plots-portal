@@ -119,7 +119,7 @@ const PlotDetail = () => {
             <div className="space-y-3">
               <Button size="lg" className="w-full" asChild>
                 <a 
-                  href={`https://wa.me/15551234567?text=I'm interested in the property: ${plot.title}`}
+                  href={`https://wa.me/0000000000?text=I'm interested in the property: ${plot.title}`}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center justify-center space-x-2"
@@ -130,7 +130,7 @@ const PlotDetail = () => {
               </Button>
               
               <Button size="lg" variant="outline" className="w-full" asChild>
-                <a href="tel:+15551234567" className="flex items-center justify-center space-x-2">
+                <a href="tel:+10000000000" className="flex items-center justify-center space-x-2">
                   <Phone className="w-5 h-5" />
                   <span>Call for Details</span>
                 </a>

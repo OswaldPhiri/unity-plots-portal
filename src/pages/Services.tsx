@@ -128,7 +128,7 @@ const Services = () => {
                 <Link to="/contact">Schedule a Consultation</Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
-                <a href="tel:+15551234567">Call Us Now</a>
+                <a href="tel:+10000000000">Call Us Now</a>
               </Button>
             </div>
           </div>

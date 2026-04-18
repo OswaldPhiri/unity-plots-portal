@@ -4,7 +4,7 @@ import { ArrowRight, Phone, MessageCircle } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gradient-to-br from-primary via-accent to-unity-dark-blue text-white py-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary via-accent to-real-dark-blue text-white py-20 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 asChild 
                 className="border-2 border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <a href="tel:+15551234567" className="flex items-center space-x-2">
+                <a href="tel:+10000000000" className="flex items-center space-x-2">
                   <Phone className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
                   <span>Call Now</span>
                 </a>
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 className="border-2 border-white text-white hover:bg-white hover:text-primary hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 <a 
-                  href="https://wa.me/15551234567" 
+                  href="https://wa.me/0000000000" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2"

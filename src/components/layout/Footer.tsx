@@ -8,16 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="/logo.png" 
-                alt="Real Investments Logo" 
-                className="h-24 w-auto object-contain"
-              />
-              <div>
-                <p className="text-sm text-muted-foreground italic">Many hands make light work</p>
-              </div>
+            <div className="flex items-baseline space-x-1">
+              <span className="text-xl font-black text-real-orange tracking-tighter">REAL</span>
+              <span className="text-xl font-light text-foreground tracking-tight">Investments</span>
             </div>
+            <p className="text-sm text-muted-foreground italic">Professional property & architecture solutions</p>
+          </div>
             <p className="text-sm text-muted-foreground">
               Your trusted partner for architectural design and secure land investments.
             </p>
@@ -48,23 +44,23 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-sm text-muted-foreground">123 Market Avenue, Capital City</span>
+                <span className="text-sm text-muted-foreground">123 Business Lane, Suite 100, City, Country</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-accent" />
-                <a href="tel:+15551234567" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+10000000000" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                  +1 (000) 000-0000
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-accent" />
-                <a href="mailto:hello@realinvestments.example" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  hello@realinvestments.example
+                <a href="mailto:contact@realinvestments.example" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                  contact@realinvestments.example
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Clock className="w-4 h-4 text-accent" />
-                <span className="text-sm text-muted-foreground">Mon–Fri, 07:30 AM – 04:00 PM</span>
+                <span className="text-sm text-muted-foreground">Mon–Fri, 08:30 AM – 05:00 PM</span>
               </div>
             </div>
           </div>
@@ -89,14 +85,14 @@ const Footer = () => {
           </p>
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             <a 
-              href="tel:+15551234567" 
+              href="tel:+10000000000" 
               className="flex items-center space-x-1 text-sm text-muted-foreground hover:text-accent transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span>Call</span>
             </a>
             <a 
-              href="https://wa.me/15551234567" 
+              href="https://wa.me/0000000000" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-1 text-sm text-muted-foreground hover:text-accent transition-colors"

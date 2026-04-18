@@ -39,12 +39,12 @@
 
     --radius: 0.75rem;
 
-    /* Custom Unity colors */
-    --unity-orange: 24 95% 53%;
-    --unity-red: 0 84% 60%;
-    --unity-dark-blue: 217 91% 24%;
-    --unity-light-gray: 210 20% 96%;
-    --unity-dark-gray: 215 25% 27%;
+    /* Custom Real Colors */
+    --real-orange: 24 95% 53%;
+    --real-red: 0 84% 60%;
+    --real-dark-blue: 217 91% 24%;
+    --real-light-gray: 210 20% 96%;
+    --real-dark-gray: 215 25% 27%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -197,29 +197,29 @@
     border-color: hsl(var(--accent));
   }
 
-  .unity-orange {
-    color: hsl(var(--unity-orange));
+  .real-orange {
+    color: hsl(var(--real-orange));
   }
-  .bg-unity-orange {
-    background-color: hsl(var(--unity-orange));
+  .bg-real-orange {
+    background-color: hsl(var(--real-orange));
   }
-  .unity-red {
-    color: hsl(var(--unity-red));
+  .real-red {
+    color: hsl(var(--real-red));
   }
-  .bg-unity-red {
-    background-color: hsl(var(--unity-red));
+  .bg-real-red {
+    background-color: hsl(var(--real-red));
   }
-  .unity-dark-blue {
-    color: hsl(var(--unity-dark-blue));
+  .real-dark-blue {
+    color: hsl(var(--real-dark-blue));
   }
-  .bg-unity-dark-blue {
-    background-color: hsl(var(--unity-dark-blue));
+  .bg-real-dark-blue {
+    background-color: hsl(var(--real-dark-blue));
   }
-  .bg-unity-light-gray {
-    background-color: hsl(var(--unity-light-gray));
+  .bg-real-light-gray {
+    background-color: hsl(var(--real-light-gray));
   }
-  .text-unity-dark-gray {
-    color: hsl(var(--unity-dark-gray));
+  .text-real-dark-gray {
+    color: hsl(var(--real-dark-gray));
   }
 }
 

@@ -63,11 +63,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Real Investments brand colors
-				'unity-orange': 'hsl(var(--unity-orange))',
-				'unity-red': 'hsl(var(--unity-red))',
-				'unity-dark-blue': 'hsl(var(--unity-dark-blue))',
-				'unity-light-gray': 'hsl(var(--unity-light-gray))',
-				'unity-dark-gray': 'hsl(var(--unity-dark-gray))'
+				'real-orange': 'hsl(var(--real-orange))',
+				'real-red': 'hsl(var(--real-red))',
+				'real-dark-blue': 'hsl(var(--real-dark-blue))',
+				'real-light-gray': 'hsl(var(--real-light-gray))',
+				'real-dark-gray': 'hsl(var(--real-dark-gray))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

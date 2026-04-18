@@ -21,13 +21,9 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link to="/" className="flex flex-col items-center py-1 sm:py-2">
-            <img 
-              src="/logo.png" 
-              alt="Real Investments Logo" 
-              className="h-12 w-auto object-contain sm:h-16 md:h-20"
-            />
-            <p className="text-xs sm:text-sm text-foreground italic mt-1 sm:mt-2 hidden sm:block">Many hands make light work</p>
+          <Link to="/" className="flex items-baseline space-x-1 group">
+            <span className="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-real-orange to-real-dark-blue tracking-tighter transition-transform duration-300 group-hover:scale-105">REAL</span>
+            <span className="text-2xl font-light text-foreground tracking-tight">Investments</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,14 +44,14 @@ const Header = () => {
           {/* Contact Buttons - Desktop */}
           <div className="hidden lg:flex items-center space-x-3">
             <Button size="sm" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white" asChild>
-              <a href="tel:+15551234567" className="flex items-center space-x-1">
+              <a href="tel:+10000000000" className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
                 <span>Call</span>
               </a>
             </Button>
             <Button size="sm" className="bg-primary hover:bg-primary/90" asChild>
               <a 
-                href="https://wa.me/15551234567" 
+                href="https://wa.me/0000000000" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-1 text-primary-foreground"
@@ -70,7 +66,7 @@ const Header = () => {
           <button
             className="lg:hidden p-2 -mr-2 rounded-md hover:bg-accent/10 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -85,7 +81,7 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   className={`text-base font-medium transition-colors hover:text-accent py-2 ${
-                    isActive(item.href) ? 'text-accent' : 'text-muted-foreground'
+                    isActive(item.href) ? "text-accent" : "text-muted-foreground"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -94,14 +90,14 @@ const Header = () => {
               ))}
               <div className="flex flex-col space-y-3 pt-4">
                 <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-white w-full" asChild>
-                  <a href="tel:+15551234567" className="flex items-center justify-center space-x-2">
+                  <a href="tel:+10000000000" className="flex items-center justify-center space-x-2">
                     <Phone className="w-5 h-5" />
                     <span>Call Now</span>
                   </a>
                 </Button>
                 <Button size="lg" className="bg-primary hover:bg-primary/90 w-full" asChild>
                   <a 
-                    href="https://wa.me/15551234567" 
+                    href="https://wa.me/0000000000" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center justify-center space-x-2 text-primary-foreground"

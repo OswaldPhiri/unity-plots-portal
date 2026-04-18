@@ -110,18 +110,18 @@ const PlotDetail = () => {
                 </p>
                 <div className="space-y-4">
                   <a
-                    href="tel:+15551234567"
+                    href="tel:+10000000000"
                     className="flex items-center gap-3 text-gray-600 hover:text-accent transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    <span>+1 (555) 123-4567</span>
+                    <span>+1 (000) 000-0000</span>
                   </a>
                   <a
-                    href="mailto:hello@realinvestments.example"
+                    href="mailto:contact@realinvestments.example"
                     className="flex items-center gap-3 text-gray-600 hover:text-accent transition-colors"
                   >
                     <Mail className="w-5 h-5" />
-                    <span>hello@realinvestments.example</span>
+                    <span>contact@realinvestments.example</span>
                   </a>
                 </div>
                 <Link

@@ -1,7 +1,7 @@
 export interface Plot {
   id: string;
   title: string;
-  location: 'North Ridge' | 'Greenfield Estate' | 'Lakeside';
+  location: 'Emerald Valley' | 'Sunrise Heights' | 'Silver Creek';
   type: 'Residential' | 'Commercial' | 'Mixed Use';
   size: string;
   price: string;
@@ -17,20 +17,20 @@ export interface Plot {
 
 export const plots: Plot[] = [
   {
-    id: 'aw4w-001',
-    title: 'Premium Residential Plot',
-    location: 'North Ridge',
+    id: 'p-001',
+    title: 'Modern Residential Plot',
+    location: 'Emerald Valley',
     type: 'Residential',
     size: '0.25 Acres',
-    price: 'MWK 15,000,000',
+    price: '$75,000',
     features: [
-      'Fully serviced plot',
-      'Access to main road',
-      'Security fencing available',
-      'Water and electricity ready',
-      'Clear title deed'
+      'Level building site',
+      'Paved access roads',
+      'Underground utilities',
+      'High-speed internet ready',
+      'Landscaped borders'
     ],
-    description: 'Prime residential plot in the heart of North Ridge. Perfect for building your dream home with easy access to amenities and main roads.',
+    description: 'A premium building site in the sought-after Emerald Valley subdivision. This level plot offers the perfect canvas for a modern family home with all essential utilities already in place.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
@@ -39,20 +39,20 @@ export const plots: Plot[] = [
     }
   },
   {
-    id: 'aw4w-002',
-    title: 'Commercial Development Plot',
-    location: 'North Ridge',
+    id: 'p-002',
+    title: 'Prime Commercial Corner',
+    location: 'Emerald Valley',
     type: 'Commercial',
     size: '0.5 Acres',
-    price: 'MWK 25,000,000',
+    price: '$120,000',
     features: [
-      'High visibility location',
-      'Commercial zoning',
-      'Access to main road',
-      'Parking space available',
-      'Development plans included'
+      'Corner visibility',
+      'High traffic counts',
+      'Commercial zoning approved',
+      'Adjacent to retail hub',
+      'Signage opportunities'
     ],
-    description: 'Strategic commercial plot ideal for retail, office, or mixed-use development. Located on a busy road with high visibility.',
+    description: 'Strategic commercial corner plot with exceptional visibility and easy access. Ideally suited for a professional office building, medical clinic, or retail boutique in a growing economic zone.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
@@ -61,20 +61,20 @@ export const plots: Plot[] = [
     }
   },
   {
-    id: 'awe-001',
-    title: 'Estate Residential Plot',
-    location: 'Greenfield Estate',
+    id: 'p-003',
+    title: 'Luxury Heights Plot',
+    location: 'Sunrise Heights',
     type: 'Residential',
     size: '0.3 Acres',
-    price: 'MWK 18,000,000',
+    price: '$95,000',
     features: [
+      'Panoramic views',
       'Gated community',
-      '24/7 security',
-      'Landscaped surroundings',
-      'Community amenities',
-      'Clear title deed'
+      'Private security patrol',
+      'Underground drainage',
+      'Eco-friendly lighting'
     ],
-    description: 'Beautiful residential plot in the prestigious Greenfield Estate. Part of a well-planned community with modern amenities.',
+    description: 'Experience elevated living with this stunning residential plot in Sunrise Heights. Enjoy breathtaking panoramic views in a secure, well-managed gated community designed for privacy and comfort.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
@@ -83,20 +83,20 @@ export const plots: Plot[] = [
     }
   },
   {
-    id: 'awe-002',
-    title: 'Mixed-Use Development Plot',
-    location: 'Greenfield Estate',
+    id: 'p-004',
+    title: 'Innovation Hub Plot',
+    location: 'Sunrise Heights',
     type: 'Mixed Use',
     size: '0.75 Acres',
-    price: 'MWK 35,000,000',
+    price: '$210,000',
     features: [
-      'Mixed-use zoning',
-      'High development potential',
-      'Access to main roads',
-      'Utilities available',
-      'Development plans included'
+      'Smart city infrastructure',
+      'Flexible zoning',
+      'Public transport access',
+      'Green space adjacency',
+      'Fibre optic backbone'
     ],
-    description: 'Large mixed-use plot perfect for residential and commercial development. Located in a growing area with high potential.',
+    description: 'A versatile mixed-use development site located within the primary innovation corridor. Perfect for a combination of high-end loft apartments and sustainable co-working spaces.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
@@ -105,20 +105,20 @@ export const plots: Plot[] = [
     }
   },
   {
-    id: 'ch-001',
-    title: 'Agricultural Plot',
-    location: 'Lakeside',
+    id: 'p-005',
+    title: 'Riverfront Retreat',
+    location: 'Silver Creek',
     type: 'Residential',
-    size: '1 Acre',
-    price: 'MWK 12,000,000',
+    size: '1.2 Acres',
+    price: '$65,000',
     features: [
-      'Fertile soil',
-      'Water source available',
-      'Access road',
-      'Agricultural potential',
-      'Clear title deed'
+      'Natural landscapes',
+      'Creek frontage',
+      'Mature trees',
+      'Quiet cul-de-sac',
+      'Low density area'
     ],
-    description: 'Spacious plot in the Lakeside area, perfect for agricultural use or residential development. Features fertile soil and water access.',
+    description: 'Escapism at its best. This oversized lot in Silver Creek offers a serene riverfront setting with mature trees and a peaceful atmosphere, ideal for a custom vacation retreat or a quiet family home.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {
@@ -127,20 +127,20 @@ export const plots: Plot[] = [
     }
   },
   {
-    id: 'ch-002',
-    title: 'Residential Plot with Garden',
-    location: 'Lakeside',
+    id: 'p-006',
+    title: 'Sun-Drenched Garden Lot',
+    location: 'Silver Creek',
     type: 'Residential',
-    size: '0.4 Acres',
-    price: 'MWK 14,000,000',
+    size: '0.45 Acres',
+    price: '$55,000',
     features: [
-      'Large garden space',
-      'Peaceful surroundings',
-      'Access to main road',
-      'Water and electricity ready',
-      'Clear title deed'
+      'Solar-optimized orientation',
+      'Fertile soil',
+      'Communal garden access',
+      'Paved pedestrian paths',
+      'Sustainable community'
     ],
-    description: 'Beautiful residential plot with ample garden space. Located in a peaceful area of Lakeside with good access to amenities.',
+    description: 'Perfect for gardening enthusiasts, this sun-drenched lot in the sustainable Silver Creek community offers fertile soil and excellent solar orientation for an eco-conscious building design.',
     status: 'Available',
     imageUrl: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&h=800&q=80',
     coordinates: {

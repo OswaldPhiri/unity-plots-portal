@@ -196,7 +196,7 @@ const PlotsService = () => {
                 Contact Us
               </Link>
               <a
-                href="tel:+15551234567"
+                href="tel:+10000000000"
                 className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-medium transition-colors"
               >
                 Call Now

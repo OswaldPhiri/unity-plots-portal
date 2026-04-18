@@ -47,25 +47,23 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Our Story
+              Our Vision
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Real Investments was founded in 2023 by a multidisciplinary team of property and design
-              professionals. We combine market insight, technical knowledge, and practical execution to help
-              clients make confident real estate and construction decisions.
+              At Real Investments, we believe that strategic property ownership is the foundation of long-term financial security. 
+              Our firm was established to bridge the gap between high-quality land opportunities and aspiring investors. 
+              We bring together a diverse team of urban planners, architectural designers, and investment analysts to 
+              ensure every plot we offer has been thoroughly vetted for value and growth potential.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              We currently offer plots in a range of carefully selected growth corridors, including:
+              We specialize in curating prime residential and commercial land in emerging development zones. 
+              Whether you are looking for a place to build your dream home or a strategic asset for your 
+              investment portfolio, our team provides the insight and support needed to make confident decisions.
             </p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>North Ridge</li>
-              <li>Greenfield Estate</li>
-              <li>Lakeside</li>
-            </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Our working hours are from 07:30 to 16:00, Monday through Friday. We're committed to 
-              providing professional service and ensuring all our clients' real estate needs are met 
-              with the highest standards of excellence.
+              Our commitment goes beyond just selling plots. We provide end-to-side architectural solutions, 
+              construction management, and expert consulting to help you maximize the value of your property 
+              from day one.
             </p>
           </div>
           
@@ -77,14 +75,14 @@ const About = () => {
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
                   <div>
                     <span className="font-semibold">Phone:</span>
-                    <a href="tel:+15551234567" className="block hover:underline">+1 (555) 123-4567</a>
+                    <a href="tel:+10000000000" className="block hover:underline">+1 (000) 000-0000</a>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
                   <div>
                     <span className="font-semibold">Email:</span>
-                    <a href="mailto:hello@realinvestments.example" className="block hover:underline">hello@realinvestments.example</a>
+                    <a href="mailto:contact@realinvestments.example" className="block hover:underline">contact@realinvestments.example</a>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -142,14 +140,14 @@ const About = () => {
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
-              <a href="tel:+15551234567" className="flex items-center space-x-2">
+              <a href="tel:+10000000000" className="flex items-center space-x-2">
                 <Phone className="w-5 h-5" />
                 <span>Call Us Today</span>
               </a>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" asChild>
               <a 
-                href="https://wa.me/15551234567" 
+                href="https://wa.me/0000000000" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"
